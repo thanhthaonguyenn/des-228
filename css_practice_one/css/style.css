@@ -1,0 +1,26 @@
+body {
+  background-color: #1695A3;
+  color: #FFFFFF;
+}
+
+p {
+  color: #EB7F00;
+}
+h3 {
+  text-align: center;
+}
+
+p {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+h3 {
+  color: #FFFFFF;
+}
+li {
+    color: #EB7F00;
+}
