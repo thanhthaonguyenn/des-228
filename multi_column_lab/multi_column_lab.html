@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Multi Column Layout Lab</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+		<header>
+		  <h1>Fleetwood Mac -- Dont Stop</h1>
+		</header>
+			
+			<!-- #1 wrap the content with a div -->
+			 <div class="content">
+			<!-- #2 wrap the lyrics with a div -->
+			<div class="lyrics">
+		<h2>Lyrics</h2>
+		<!-- <br> -->
+			  <p>If you wake up and don't want to smile<br>
+					If it takes just a little while<br>
+					Open your eyes and look at the day<br>
+					You'll see things in a different way<br>
+					<br>
+					Don't stop thinking about tomorrow<br>
+					Don't stop, it'll soon be here<br>
+					It'll be better than before<br>
+					Yesterday's gone, yesterday's gone<br>
+					<br>
+					Why not think about times to come<br>
+					And not about the things that you've done<br>
+					If your life was bad to you<br>
+					Just think what tomorrow will do<br><br>
+					Don't stop thinking about tomorrow<br>
+					Don't stop, it'll soon be here<br>
+					It'll be better than before<br>
+					Yesterday's gone, yesterday's gone<br><br>
+					All I want is to see you smile<br>
+					If it takes just a little while<br>
+					I know you don't believe that it's true<br>
+					I never meant any harm to you<br><br>
+					Don't stop thinking about tomorrow<br>
+					Don't stop, it'll soon be here<br>
+					It'll be better than before<br>
+					Yesterday's gone, yesterday's gone<br><br>
+					Don't stop thinking about tomorrow<br>
+					Don't stop, it'll soon be here<br>
+					It'll be better than before<br>
+					Yesterday's gone, yesterday's gone<br><br>
+					don't you look back<br>
+					(Ooh) don't you look back<br>
+					(Ooh) don't you look back<br>
+					(Ooh) don't you look back<br>
+			  </p>
+
+			</div>
+
+			<!-- #3 Wrap the album info with another div  -->
+			 <div class="album-info">
+		
+			  <h2>Album Info</h2><br>
+			<img src="img/rumours.jpg" alt="Rumours Album Cover">
+			  <p id="info">Rumours is the eleventh studio album by<br> British-American rock band Fleetwood Mac<br>
+				but only the second with Buckingham & Nicks</p>
+			  <ul>
+			  	<li><strong>Album:</strong> Rumours</li>
+			  	<li><strong>Release Date:</strong> February 4, 1977</li>
+			  </ul>
+
+			     </div>
+              </div>
+	
+		<footer>
+		   <h2>lyrics and music by Christine McVie</h2>
+		</footer>
+
+      <a href="../index.html">Back to Interactive Sketchbook</a>
+
+    <section class="reflection">
+	 <h2>Process Reflection</h2>
+	  <p>In this lab, I learned how to use Flexbox to create a multi-column layout. At first, I had some trouble 
+		understanding the relationship between the parent container and the child containers. I learned that the main 
+		content div needs to be the flex container, while the lyrics and album information are the flex items inside it. 
+	    After adding display: flex and flex-direction: row, I could see the two sections move next to each other instead 
+		of appearing vertically.I also experimented with percentages to control the width of each column. I adjusted the 
+		padding to create more space around the content and make the page easier to read. I also changed the size of the 
+		album image so that it looked more balanced with the lyrics column and closer to the reference layout. One problem 
+		I had was that the custom font did not appear at first. I realized that the path to the font file was incorrect, 
+		so I corrected the file path in CSS. This lab helped me understand Flexbox better, especially how parent and child 
+		elements work together to create a layout.</p>
+		</section>
+</body>
+</html>
