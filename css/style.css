@@ -17,8 +17,13 @@ body {
     background-color: #F2F0D8;
 }
 
+
 nav {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
   background-color: #F2F0D8;
   padding: 15px;
 }
@@ -29,7 +34,6 @@ nav a {
   text-decoration: none;
   border: 1px solid #26241C;
   padding: 12px 20px;
-  margin: 10px;
   font-family: Arial, sans-serif;
 }
 
@@ -74,4 +78,170 @@ h1 {
 h2 {
     margin-top: 30px;
     margin-bottom: 15px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.project-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+
+
+
+.about-layout {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 30px auto;
+    max-width: 1200px;
+}
+
+.about-video {
+    flex: 1 1 400px;
+    min-width: 0;
+}
+
+.about-video iframe {
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    display: block;
+}
+
+.about-text {
+    flex: 1 1 400px;
+    min-width: 0;
+}
+
+.about-text h2 {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+
+
+
+.artists-layout {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.artist-card {
+    flex: 1 1 300px;
+    min-width: 0;
+    padding: 20px;
+    border: 1px solid #26241C;
+    background-color: #F8F6E8;
+}
+
+.artist-card h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.artist-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    margin: 15px auto;
+}
+
+.artist-card p {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+
+
+.timeline {
+    max-width: 1150px;
+    margin: 40px auto;
+    padding-left: 30px;
+    border-left: 3px solid #A59B7A;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #F8F6E8;
+    border: 1px solid #D3C9B2;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: #A59B7A;
+    border-radius: 50%;
+    left: -39px;
+    top: 25px;
+}
+
+.timeline-item h2 {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.timeline-item p {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+
+.process-entry {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.process-text {
+    flex: 1 1 300px;
+    min-width: 0;
+}
+
+.process-image {
+    flex: 1 1 300px;
+    min-width: 0;
+    margin: 0;
+}
+
+.process-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.process-image figcaption {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
 }
