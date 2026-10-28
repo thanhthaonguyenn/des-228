@@ -119,3 +119,13 @@ should be on the page and correct the errors */
   line-height: 26px;
   text-transform: none;
 }
+
+nav {
+  margin: 5px 0;
+}
+nav a:hover {
+  background-color: #eee;
+}
+nav a {
+  font-size: 20px;
+}
