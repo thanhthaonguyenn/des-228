@@ -3,8 +3,8 @@
   margin: 0;
 }
 
-/* now we can control our margins ourselves, so lets give the body a 50px margin on the left and right; and a 25px margin on the top 
-and bottom.
+/* now we can control our margins ourselves, so lets give the body a 50px margin on the left and right; and a 25px 
+margin on the top and bottom.
 
 can you write it in shorthand?*/
 
@@ -13,7 +13,8 @@ body {
    font-family: "Lato", sans-serif;
 }
 
-/* Find a custom font on Google Fonts and add it to the HTML head and your CSS: make sure you add the links and the font-family */
+/* Find a custom font on Google Fonts and add it to the HTML head and your CSS: make sure you add the links and the 
+font-family */
 
 /* Style the h1:
    10px margin on the bottom
