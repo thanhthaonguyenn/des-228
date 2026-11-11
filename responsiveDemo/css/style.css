@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: lightblue;
+    margin: 0;
+}
+
+#topPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+ #logo {
+  width: 200px;
+}
+
+#pagetitle {
+  background-color: rgb(0,0,255);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+h1 {
+    font-size: 3.25em;
+}
+
+h2 {
+    font-size: 3em;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2.25em;
+}
+
+p {
+    font-size: 1.125em;
+}
+
+a {
+  color: chartreuse;
+} 
+
+.bodytext {
+  padding-left: 25px;
+}
+
+/* --------styles--------------- */
+
+.directions {
+  background-color: blueviolet;
+  color: aquamarine;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+#viewport {
+  background-color: rgb(200,255,100);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#viewportImage {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+}
+
+#before, #after {
+  border: 1px solid black;
+}
+
+#beforeAfter {
+    background-color: chartreuse;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#beforeBlock,
+#afterBlock {
+    flex: 1 1 300px;
+    min-width: 0;
+    text-align: center;
+}
+
+#before,
+#after {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+#gifs {
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#leftgif, #centergif, #rightgif {
+  border: 1px solid black;
+
+}
+
+.gifsSize {
+    width: 100%;
+    max-width: 325px;
+    height: auto;
+    }
+#leftgif,
+#centergif,
+#rightgif {
+    flex: 1 1 250px;
+    min-width: 0;
+    max-width: 350px;
+    text-align: center;
+}
+
+.bodytext {
+
+  background-color: cyan;
+
+}
+
+#media {
+  background-color: hotpink;
+}  
+
+#mediaImages {
+    width: 100%;
+}
+
+#mediaImages img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* -------- media queries --------- */
+
+@media screen and (max-width: 600px) {
+    #topPage {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #pagetitle {
+        font-size: 1.5rem;
+        width: 100%;
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    #logo {
+        width: 150px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .directions {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    #viewportImage {
+        width: 100%;
+        height: auto;
+    }
+
+    #beforeAfter,
+    #gifs {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #beforeBlock,
+    #afterBlock,
+    #leftgif,
+    #centergif,
+    #rightgif {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 1 auto;
+    }
+
+    #before,
+    #after,
+    .gifsSize,
+    #mediaImages img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    #before,
+    #after {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #pagetitle {
+        font-size: 1.25rem;
+    }
+
+    .directions {
+        font-size: 1rem;
+    }
+
+    .bodytext {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #logo {
+        width: 120px;
+    }
+}
+
+/* Back to Home Button */
+a.back-home,
+a.back-home:link,
+a.back-home:visited {
+    display: inline-block;
+    margin: 20px;
+    padding: 15px 25px;
+    font-size: 28px !important;
+    font-weight: bold;
+    line-height: 1.4;
+    color: #FFFFFF !important;
+    background-color: #003366;
+    border: 2px solid #003366;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+a.back-home:hover {
+    background-color: #005599;
+    color: #FFFFFF !important;
+}
