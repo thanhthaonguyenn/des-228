@@ -257,3 +257,9 @@ a.back-home:hover {
     background-color: #005599;
     color: #FFFFFF !important;
 }
+
+#viewport img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
