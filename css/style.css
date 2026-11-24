@@ -272,3 +272,93 @@ h2 {
   background-color: #E8A0BF;
   box-shadow: 0 4px 12px rgba(180, 90, 130, 0.25);
 }
+
+
+/* Checkpoint Two: Responsive Point of Entry */
+
+.home-page img,
+.home-page iframe {
+    max-width: 100%;
+}
+
+.home-page .main-nav a,
+.home-page .project-nav a {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    text-align: center;
+}
+
+/* Breakpoint 1: 768px */
+
+@media screen and (max-width: 768px) {
+
+    .home-page {
+        padding: 20px;
+    }
+
+    .home-page h1 {
+        font-size: 32px;
+    }
+
+    .home-page .main-nav,
+    .home-page .project-nav {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .home-page .project-nav a {
+        flex: 1 1 40%;
+        padding: 10px 15px;
+    }
+
+    .home-page .project-title {
+        font-size: 24px;
+        margin-top: 40px;
+    }
+}
+
+/* Breakpoint 2: 480px */
+
+@media screen and (max-width: 480px) {
+
+    .home-page {
+        padding: 12px;
+    }
+
+    .home-page h1 {
+        font-size: 26px;
+    }
+
+    .home-page h2 {
+        font-size: 20px;
+    }
+
+    .home-page p {
+        font-size: 16px;
+    }
+
+    .home-page .main-nav,
+    .home-page .project-nav {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    .home-page .main-nav a,
+    .home-page .project-nav a {
+        flex: 0 1 auto;
+        width: 100%;
+        padding: 12px;
+        text-align: center;
+    }
+
+    .home-page .project-title {
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .home-page .main-nav a:hover,
+    .home-page .project-nav a:hover {
+        transform: none;
+    }
+}
